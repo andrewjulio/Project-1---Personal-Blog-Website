@@ -1,13 +1,13 @@
 .large-container {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 240px 180px 300px 300px 60px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 240px 80px 600px 140px 60px;
     grid-template-areas: 
-    "hd"
-    "wel"
-    "blog"
-    "pf"
-    "ft";
+    "hd hd"
+    "title title"
+    "blog blog"
+    "sd sd"
+    "ft ft";
 }
 
 .box {
@@ -20,16 +20,19 @@
     grid-area: hd;
 }
 
-.welcome {
-    grid-area: wel;
+.title {
+    grid-area: title;
 }
 
 .blog {
     grid-area: blog;
 }
 
-.portfolio {
-    grid-area: pf;
+.sidebar {
+    grid-area: sd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .footer {
@@ -101,19 +104,9 @@ ul {
     text-align: right;
 }
 
-.blog, .portfolio {
+.blog {
     display: grid;
     justify-content: center;
-}
-
-.card {
-    width: 300px;
-    display: grid;
-    display: inline-block;
-    border: 1px solid;
-    border-color: red;
-    border-radius: 2.5%;
-    background: grey;
 }
 
 #nav-bottom{
