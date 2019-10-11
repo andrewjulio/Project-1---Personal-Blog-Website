@@ -1,12 +1,10 @@
 .large-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 240px 80px 600px 140px 60px;
+    grid-template-rows: 240px 1200px 60px;
     grid-template-areas: 
     "hd"
-    "title"
-    "blog"
-    "sd"
+    "port"
     "ft";
 }
 
@@ -18,21 +16,6 @@
 
 .header {
     grid-area: hd;
-}
-
-.title {
-    grid-area: title;
-}
-
-.blog {
-    grid-area: blog;
-}
-
-.sidebar {
-    grid-area: sd;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 .footer {
@@ -104,9 +87,22 @@ ul {
     text-align: right;
 }
 
-.blog {
+.portfolio {
+    grid-area: port;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 300px;
     display: grid;
-    justify-content: center;
+    display: inline-block;
+    border: 1px solid;
+    border-color: red;
+    border-radius: 2.5%;
+    background: grey;
+    margin: 10px;
 }
 
 #nav-bottom{
