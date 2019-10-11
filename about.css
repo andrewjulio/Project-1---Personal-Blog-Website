@@ -1,0 +1,99 @@
+.large-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 240px 450px 60px;
+    grid-template-areas: 
+    "hd"
+    "about"
+    "ft";
+}
+
+.box {
+    border: 2px solid;
+    border-color: yellowgreen;
+    background: lightgrey;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.centre {
+    grid-area: centre;
+}
+
+a:link {
+    text-decoration: none;
+    color: #85c7c7;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: #85c7c7;
+}
+
+a:hover {
+    color: #8c8c8c;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+    "logo logo logo"
+    "xx fc nav"
+    "xx fc nav"    
+    "xx fc lb";
+}
+
+.logo {
+    grid-area: logo;
+    margin: 0px;
+    padding: 0px;
+}
+
+.face {
+    grid-area: fc;
+    background-image: url("moi-black.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.langbar {
+    grid-area: lb;
+}
+
+.nav, .langbar {
+    text-align: right;
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#nav-bottom{
+    display: none;
+}
