@@ -90,14 +90,14 @@ ul {
 .portfolio {
     grid-area: port;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     width: 300px;
-    display: grid;
-    display: inline-block;
+    display: block;
     border: 1px solid;
     border-color: red;
     border-radius: 2.5%;
