@@ -1,7 +1,7 @@
 .large-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 240px 150px repeat(3, 300px);
+    grid-template-rows: 240px 180px repeat(3, 300px);
     grid-template-areas: 
     "hd"
     "wel"
@@ -99,4 +99,15 @@ ul {
 
 .nav, .langbar {
     text-align: right;
+}
+
+.blog {
+    display: grid;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    display: grid;
+    display: inline-block;
 }
