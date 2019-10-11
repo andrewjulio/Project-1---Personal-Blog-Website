@@ -8,7 +8,7 @@
         <meta
         content="width=device-width, initial-scale=1, maximum-scale=1"
         name="viewport"/>
-        <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="blog-medium.css">
         <link href="https://fonts.googleapis.com/css?family=Iceland|Poppins&display=swap" rel="stylesheet">
     </head>
 
@@ -39,46 +39,55 @@
             </header>
 
             <section class="title box">
-                <h1>Blog Title</h1>
-            </section>
-
-            <article class="blog box">
-                <div class="centre">
-                    <div class="card">
-                        <h2>Example Blog Post</h2>
-                        <h3>October 11th, 2019</h3>
-                        <p>This card represents an example blog post</p>
-                    </div>
-                </div>
-            </article>
-
-            <section class="sidebar box">
-                <div id="Archives">
-                    <h3>Archives</h3>
-                    <div class="archive box">
-                        <ul id="archive box">
-                            <li><a href="october2019.html">October 2019</a></li>
-                            <li><a href="september2019.html">September 2019</a></li>
-                            <li><a href="august2019.html">August 2019</a></li>
-                            <li><a href="july2019.html">July 2019</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="Links">
-                    <h3>Links</h3>
-                    <div class="link box">
-                        <ul id="link box">
-                            <li><a href="https://www.udacity.com">Udacity</a></li>
-                            <li><a href="https://www.teamtreehouse.com">Treehouse</a></li>
-                            <li><a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
-                        </ul>
-                    </div>
+                <div class="centre box" id="title">
+                    <h1>Blog Title</h1>
                 </div>
             </section>
+
+            <div class="content box">
+                <div class="centre box" id="content">
+
+                    <article class="blog box">
+                        <div class="card">
+                            <h2>Example Blog Post</h2>
+                            <h3>October 11th, 2019</h3>
+                            <p>This card represents an example blog post</p>
+                        </div>
+                    </article>
+                
+    
+                    <section class="sidebar box">
+                        <div id="Archives">
+                            <h3>Archives</h3>
+                            <div class="archive box">
+                                <ul id="archive box">
+                                    <li><a href="october2019.html">October 2019</a></li>
+                                    <li><a href="september2019.html">September 2019</a></li>
+                                    <li><a href="august2019.html">August 2019</a></li>
+                                    <li><a href="july2019.html">July 2019</a></li>
+                                </ul>
+                            </div>
+                        </div>
+        
+                        <div class="links box">
+                            <h3>Links</h3>
+                            <div class="link box">
+                                <ul id="link box">
+                                    <li><a href="https://www.udacity.com">Udacity</a></li>
+                                    <li><a href="https://www.teamtreehouse.com">Treehouse</a></li>
+                                    <li><a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
 
             <footer class="footer box">
-                <div class="centre box">
+                <div class="centre box" id="footer">
+
                     <div class="copy box"><p>©2019 dzhu!</p></div>
                     <div class="nav box" id="nav-bottom">
                         <ul id="navbar box">
@@ -88,6 +97,7 @@
                             <li><a href="contact">contact</a></li>
                         </ul>
                     </div>
+
                 </div>
             </footer>
 
