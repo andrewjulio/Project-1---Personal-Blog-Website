@@ -44,3 +44,7 @@
 .centre {
     grid-area: centre;
 }
+
+#navtop {
+    position: fixed;
+}

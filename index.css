@@ -1,13 +1,13 @@
 .large-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: 240px repeat(4, 300px);
     grid-template-areas: 
     "hd"
     "wel"
     "blog"
     "pf"
-    "ft"
+    "ft";
 }
 
 .box {
@@ -38,4 +38,65 @@
 
 .centre {
     grid-area: centre;
+}
+
+a:link {
+    text-decoration: none;
+    color: #85c7c7;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: #85c7c7;
+}
+
+a:hover {
+    color: #8c8c8c;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+    "logo logo logo"
+    "xx fc nav"
+    "xx fc nav"    
+    "xx fc lb";
+}
+
+.logo {
+    grid-area: logo;
+    margin: 0px;
+    padding: 0px;
+}
+
+.face {
+    grid-area: fc;
+    background-image: url("moi-black.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.langbar {
+    grid-area: lb;
+}
+
+.nav, .langbar {
+    text-align: right;
 }
