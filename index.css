@@ -1,0 +1,37 @@
+.large-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas: 
+    "hd"
+    "wel"
+    "blog"
+    "pf"
+    "ft"
+}
+
+.box {
+    border: 5px;
+    border-color: yellowgreen;
+    background: lightgrey;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.welcome {
+    grid-area: wel;
+}
+
+.blog {
+    grid-area: blog;
+}
+
+.portfolio {
+    grid-area: pf;
+}
+
+.footer {
+    grid-area: ft;
+}

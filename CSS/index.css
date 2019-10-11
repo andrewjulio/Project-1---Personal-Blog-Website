@@ -1,0 +1,10 @@
+.large-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    border: 2px;
+    border-color: yellowgreen;
+    background: lightgrey;
+}
