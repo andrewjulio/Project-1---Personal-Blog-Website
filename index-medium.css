@@ -18,6 +18,11 @@
 
 .header {
     grid-area: hd;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "centre";
+    justify-content: center;
 }
 
 .welcome {
