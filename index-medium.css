@@ -16,10 +16,10 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    .box {
+    /*.box {
         border: 2px solid;
         border-color: yellowgreen;
-    }
+    }*/
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -59,6 +59,7 @@
 
     .footer {
         grid-area: ft;
+        background-color: rgb(197, 194, 194);
     }
 
     .header, .welcome, .blog, .portfolio, .footer, #welcome-face {
@@ -74,19 +75,33 @@
         align-content: center;
     }
 
-    .header, .footer {
-        background-color: black;
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .langbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .langbar a {
+        padding: 1.5px;
     }
 
      /* Styling the links */
     a:link {
         text-decoration: none;
-        color: #85c7c7;
+        color: #f1ffff;
     }
     
     a:visited {
         text-decoration: none;
-        color: #85c7c7;
+        color: #f1ffff;
     }
 
     a:hover {
@@ -101,17 +116,6 @@
     h1, h2, h3, p {
         margin: 0px;
         padding: 0px;
-    }
-
-    /* Styling the lists */
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        display: inline;
     }
 
     /* Using a Grid Display to determine the Layout of the Header/Footer Navigation Bar */
@@ -133,7 +137,7 @@
         grid-area: face;
     }
 
-    .nav {
+    .navbar {
         grid-area: nav;
     }
 
@@ -141,7 +145,7 @@
         grid-area: lang;
     }
 
-    .nav, .langbar {
+    .navbar, .langbar {
         text-align: center;
     }
 
