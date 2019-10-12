@@ -1,121 +1,125 @@
-.large-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 240px 180px 300px 300px 60px;
-    grid-template-areas: 
-    "hd"
-    "wel"
-    "blog"
-    "pf"
-    "ft";
-}
+@media (max-width: 900px) {
 
-.box {
-    border: 2px solid;
-    border-color: yellowgreen;
-    background: lightgrey;
-}
+    .large-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 240px 180px 300px 300px 60px;
+        grid-template-areas: 
+        "hd"
+        "wel"
+        "blog"
+        "pf"
+        "ft";
+    }
 
-.header {
-    grid-area: hd;
-}
+    .box {
+        border: 2px solid;
+        border-color: yellowgreen;
+        background: lightgrey;
+    }
 
-.welcome {
-    grid-area: wel;
-}
+    .header {
+        grid-area: hd;
+    }
 
-.blog {
-    grid-area: blog;
-}
+    .welcome {
+        grid-area: wel;
+    }
 
-.portfolio {
-    grid-area: pf;
-}
+    .blog {
+        grid-area: blog;
+    }
 
-.footer {
-    grid-area: ft;
-}
+    .portfolio {
+        grid-area: pf;
+    }
 
-.centre {
-    grid-area: centre;
-}
+    .footer {
+        grid-area: ft;
+    }
 
-a:link {
-    text-decoration: none;
-    color: #85c7c7;
-}
-  
-a:visited {
-    text-decoration: none;
-    color: #85c7c7;
-}
+    .centre {
+        grid-area: centre;
+    }
 
-a:hover {
-    color: #8c8c8c;
-}
+    a:link {
+        text-decoration: none;
+        color: #85c7c7;
+    }
+    
+    a:visited {
+        text-decoration: none;
+        color: #85c7c7;
+    }
 
-a:active {
-    text-decoration: none;
-}
+    a:hover {
+        color: #8c8c8c;
+    }
 
-ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
+    a:active {
+        text-decoration: none;
+    }
 
-#header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 25%);
-    grid-template-areas: 
-    "logo logo logo"
-    "xx fc nav"
-    "xx fc nav"    
-    "xx fc lb";
-}
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
 
-.logo {
-    grid-area: logo;
-    margin: 0px;
-    padding: 0px;
-}
+    #header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas: 
+        "logo logo logo"
+        "xx fc nav"
+        "xx fc nav"    
+        "xx fc lb";
+    }
 
-.face {
-    grid-area: fc;
-    background-image: url("moi-black.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .logo {
+        grid-area: logo;
+        margin: 0px;
+        padding: 0px;
+    }
 
-.nav {
-    grid-area: nav;
-}
+    .face {
+        grid-area: fc;
+        background-image: url("moi-black.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-.langbar {
-    grid-area: lb;
-}
+    .nav {
+        grid-area: nav;
+    }
 
-.nav, .langbar {
-    text-align: right;
-}
+    .langbar {
+        grid-area: lb;
+    }
 
-.blog, .portfolio {
-    display: grid;
-    justify-content: center;
-}
+    .nav, .langbar {
+        text-align: right;
+    }
 
-.card {
-    width: 300px;
-    display: grid;
-    display: inline-block;
-    border: 1px solid;
-    border-color: red;
-    border-radius: 2.5%;
-    background: grey;
-}
+    .blog, .portfolio {
+        display: grid;
+        justify-content: center;
+    }
 
-#nav-bottom{
-    display: none;
+    .card {
+        width: 300px;
+        display: grid;
+        display: inline-block;
+        border: 1px solid;
+        border-color: red;
+        border-radius: 2.5%;
+        background: grey;
+    }
+
+    #nav-bottom{
+        display: none;
+    }
+
 }

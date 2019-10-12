@@ -1,0 +1,5 @@
+/* Responsive Stylesheets for blog-en.html, blog-de.html, blog-ru.html */
+
+@import "blog.css";
+@import "blog-medium.css";
+@import "blog-large.css";

@@ -1,15 +1,14 @@
-@media (min-width: 901px) and (max-width: 1400px) {
+@media (min-width: 1401px) {
 
     .large-container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50px repeat(3, 300px) 50px;
+        grid-template-rows: 50px 80px 900px 50px;
         grid-template-areas: 
         "hd"
-        "wel"
-        "blog"
-        "pf"
-        "ft"
+        "title"
+        "content"
+        "ft";
     }
 
     .box {
@@ -42,17 +41,48 @@
         padding: 0px;
     }
 
-    li {
+    .header li, .footer li {
         display: inline;
     }
 
-    .header, .welcome, .blog, .portfolio, .footer {
+    .header {
         grid-area: hd;
+    }
+
+    .header, .title, .content, .footer {
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: 80%;
         grid-template-rows: 100%;
         grid-template-areas: "centre";
         justify-content: center;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "blog sd"
+        "blog links";
+    }
+    .title {
+        grid-area: title;
+    }
+
+    .blog {
+        grid-area: blog;
+    }
+
+    .sidebar {
+        grid-area: sd;
+    }
+
+    .links {
+        grid-area: links;
+    }
+
+    .footer {
+        grid-area: ft;
     }
 
     #header, #footer {
@@ -79,36 +109,4 @@
     .face {
         grid-area: face;
     }
-
-    .welcome {
-        grid-area: wel;
-    }
-
-    #welcome {
-        background-image: url("moi-black.jpg");
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-
-    .blog {
-        grid-area: blog;
-    }
-
-    .portfolio {
-        grid-area: pf;
-    }
-
-    .footer {
-        grid-area: ft;
-    }
-
-    .centre {
-        grid-area: centre;
-    }
-
-    #navtop {
-        position: fixed;
-    }
-
 }

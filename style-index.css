@@ -1,0 +1,5 @@
+/* Responsive Stylesheets for index-en.html, index-de.html, index-ru.html */
+
+@import "index.css";
+@import "index-medium.css";
+@import "index-large.css";

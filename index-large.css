@@ -1,4 +1,4 @@
-@media (min-width: 901px) and (max-width: 1400px) {
+@media (min-width: 1401px) {
 
     .large-container {
         display: grid;
@@ -49,7 +49,7 @@
     .header, .welcome, .blog, .portfolio, .footer {
         grid-area: hd;
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: 80%;
         grid-template-rows: 100%;
         grid-template-areas: "centre";
         justify-content: center;

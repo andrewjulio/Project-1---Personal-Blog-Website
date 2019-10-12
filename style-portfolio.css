@@ -1,0 +1,5 @@
+/* Responsive Stylesheets for portfolio-en.html, portfolio-de.html, portfolio-ru.html */
+
+@import "portfolio.css";
+@import "portfolio-medium.css";
+@import "portfolio-large.css";
