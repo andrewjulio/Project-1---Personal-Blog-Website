@@ -1,5 +1,6 @@
 @media (max-width: 900px) {
 
+    /* General Layout of index-*.html */
     .large-container {
         display: grid;
         grid-template-columns: 100%;
@@ -12,12 +13,14 @@
         "ft";
     }
 
+    /* Boxes for visual aid in determining the UI*/
     .box {
         border: 2px solid;
         border-color: yellowgreen;
         background: lightgrey;
     }
 
+    /* Assigning the Grid Area Layout: Website */
     .header {
         grid-area: hd;
     }
@@ -38,10 +41,12 @@
         grid-area: ft;
     }
 
+    /* Applying the assigned Centre class to the main sections */
     .centre {
         grid-area: centre;
     }
 
+    /* Styling the links */
     a:link {
         text-decoration: none;
         color: #85c7c7;
@@ -60,12 +65,14 @@
         text-decoration: none;
     }
 
+    /* Styling the lists */
     ul {
         list-style: none;
         margin: 0px;
         padding: 0px;
     }
 
+    /* Using a Grid Display to determine the Layout of the Header Navigation Bar. Applying Ghost Grid Areas (xx) to evenly distribute content horizontally */
     #header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -77,10 +84,9 @@
         "xx fc lb";
     }
 
+    /* Assigning the Grid Area Layout: Header Nav Bar */
     .logo {
         grid-area: logo;
-        margin: 0px;
-        padding: 0px;
     }
 
     .face {
@@ -103,11 +109,14 @@
         text-align: right;
     }
 
+    /* Using Grid Display to justify and align the content within their respective Div Containers, thus centering their content horizontally and vertically respectively*/
     .blog, .portfolio {
         display: grid;
         justify-content: center;
+        align-content: center;
     }
 
+    /* Creating the Cards used to advertise the Blog and Project Posts */
     .card {
         width: 300px;
         display: grid;
@@ -118,6 +127,7 @@
         background: grey;
     }
 
+    /* Hidding the Footer Nav Bar for Small Displays */
     #nav-bottom{
         display: none;
     }
