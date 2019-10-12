@@ -1,6 +1,6 @@
 @media (max-width: 900px) {
 
-    /* General Layout of index-*.html */
+    /* General Layout of index-*.html for Small Devices*/
     .large-container {
         display: grid;
         grid-template-columns: 100%;
@@ -11,16 +11,17 @@
         "blog"
         "pf"
         "ft";
+        justify-content: center;
+        align-content: center;
     }
 
     /* Boxes for visual aid in determining the UI*/
     .box {
         border: 2px solid;
         border-color: yellowgreen;
-        background: lightgrey;
     }
 
-    /* Assigning the Grid Area Layout: Website */
+    /* Assigning the Grid Area Layout: Index Website */
     .header {
         grid-area: hd;
     }
@@ -41,9 +42,8 @@
         grid-area: ft;
     }
 
-    /* Applying the assigned Centre class to the main sections */
-    .centre {
-        grid-area: centre;
+    .header, .footer {
+        background-color: black;
     }
 
     /* Styling the links */
@@ -65,11 +65,17 @@
         text-decoration: none;
     }
 
+    /* Removing default Margin and Padding*/
+    h1, h2, h3, p {
+        margin: 0px;
+        padding: 0px;
+    }
+
     /* Styling the lists */
     ul {
         list-style: none;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     /* Using a Grid Display to determine the Layout of the Header Navigation Bar. Applying Ghost Grid Areas (xx) to evenly distribute content horizontally */
@@ -87,6 +93,7 @@
     /* Assigning the Grid Area Layout: Header Nav Bar */
     .logo {
         grid-area: logo;
+        text-align: right;
     }
 
     .face {

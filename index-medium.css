@@ -1,5 +1,6 @@
 @media (min-width: 901px) and (max-width: 1400px) {
 
+    /* General Layout of index-*.html for Large Devices*/
     .large-container {
         display: grid;
         grid-template-columns: 100%;
@@ -9,15 +10,75 @@
         "wel"
         "blog"
         "pf"
-        "ft"
+        "ft";
+        justify-content: center;
+        align-content: center;
     }
 
+    /* Boxes for visual aid in determining the UI*/
     .box {
         border: 2px solid;
         border-color: yellowgreen;
-        background: lightgrey;
     }
 
+    /* Assigning the Grid Area Layout: Index Website */
+    .header {
+        grid-area: hd;
+        background-color: black;
+    }
+
+    .welcome {
+        grid-area: wel;
+    }
+
+    /* Creating the Welcome Card (Hidden card) */
+    #welcome-card {
+        width: 300px;
+        display: grid;
+        display: block;
+        border: 1px solid;
+        border-color: red;
+        border-radius: 2.5%;
+    }
+
+    #welcome {
+        height: 300px;
+        background: url("moi.jpg");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .blog {
+        grid-area: blog;
+    }
+
+    .portfolio {
+        grid-area: pf;
+    }
+
+    .footer {
+        grid-area: ft;
+    }
+
+    .header, .welcome, .blog, .portfolio, .footer, #welcome-face {
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .centre {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .header, .footer {
+        background-color: black;
+    }
+
+     /* Styling the links */
     a:link {
         text-decoration: none;
         color: #85c7c7;
@@ -36,39 +97,43 @@
         text-decoration: none;
     }
 
-    ul {
-        list-style: none;
+    /* Removing default Margin and Padding*/
+    h1, h2, h3, p {
         margin: 0px;
         padding: 0px;
+    }
+
+    /* Styling the lists */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
     li {
         display: inline;
     }
 
-    .header, .welcome, .blog, .portfolio, .footer {
-        grid-area: hd;
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: 100%;
-        grid-template-areas: "centre";
-        justify-content: center;
-    }
-
+    /* Using a Grid Display to determine the Layout of the Header/Footer Navigation Bar */
     #header, #footer {
         display: grid;
         grid-template-columns: 50% 25% 12.5% 12.5%;
         grid-template-rows: 100%;
         grid-template-areas: 
         "logo nav lang face";
-        align-items: center;
+        display: grid;
     }
 
-    .logo {
+    /* Assigning the Grid Area Layout: Header Nav Bar */
+    .logo .copy {
         grid-area: logo;
     }
 
-    #navtop {
+    .face {
+        grid-area: face;
+    }
+
+    .nav {
         grid-area: nav;
     }
 
@@ -76,39 +141,26 @@
         grid-area: lang;
     }
 
-    .face {
-        grid-area: face;
+    .nav, .langbar {
+        text-align: center;
     }
 
-    .welcome {
-        grid-area: wel;
+    /* Using Grid Display to justify and align the content within their respective Div Containers, thus centering their content horizontally and vertically respectively*/
+    .welcome, .blog, .portfolio {
+        display: grid;
+        justify-content: center;
+        align-content: center;
     }
 
-    #welcome {
-        background-image: url("moi-black.jpg");
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-
-    .blog {
-        grid-area: blog;
-    }
-
-    .portfolio {
-        grid-area: pf;
-    }
-
-    .footer {
-        grid-area: ft;
-    }
-
-    .centre {
-        grid-area: centre;
-    }
-
-    #navtop {
-        position: fixed;
+    /* Creating the Cards used to advertise the Blog and Project Posts */
+    .card {
+        width: 300px;
+        display: grid;
+        display: inline-block;
+        border: 1px solid;
+        border-color: red;
+        border-radius: 2.5%;
+        background: grey;
     }
 
 }
