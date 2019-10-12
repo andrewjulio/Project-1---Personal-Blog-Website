@@ -32,7 +32,7 @@
 
     /* Creating the Welcome Card (Hidden card) */
     #welcome-card {
-        width: 300px;
+        width: 600px;
         display: grid;
         display: block;
         border: 1px solid;
@@ -76,7 +76,7 @@
     .header, .footer {
         background-color: black;
     }
-    
+
      /* Styling the links */
     a:link {
         text-decoration: none;

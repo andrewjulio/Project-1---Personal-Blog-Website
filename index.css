@@ -30,6 +30,16 @@
         grid-area: wel;
     }
 
+    /* Creating the Welcome Card (Hidden card) */
+    #welcome-card {
+        width: 300px;
+        display: grid;
+        display: block;
+        border: 1px solid;
+        border-color: red;
+        border-radius: 2.5%;
+    }
+
     .blog {
         grid-area: blog;
     }
@@ -40,6 +50,19 @@
 
     .footer {
         grid-area: ft;
+    }
+
+    .header, .welcome, .blog, .portfolio, .footer, #welcome-face {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .centre {
+        display: grid;
+        justify-content: center;
+        align-content: center;
     }
 
     .header, .footer {
