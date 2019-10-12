@@ -3,58 +3,59 @@
     .large-container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50px 80px 900px 50px;
+        grid-template-rows: 50px 300px 80px 900px 50px;
         grid-template-areas: 
         "hd"
+        "wel"
         "title"
         "content"
         "ft";
+        justify-content: center;
+        align-content: center;
     }
 
-    .box {
+    /* Boxes for visual aid in determining the UI*/
+    /*.box {
         border: 2px solid;
         border-color: yellowgreen;
-        background: lightgrey;
-    }
+    }*/
 
-    a:link {
-        text-decoration: none;
-        color: #85c7c7;
-    }
-    
-    a:visited {
-        text-decoration: none;
-        color: #85c7c7;
-    }
-
-    a:hover {
-        color: #8c8c8c;
-    }
-
-    a:active {
-        text-decoration: none;
-    }
-
-    ul {
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .header li, .footer li {
-        display: inline;
-    }
-
+    /* Assigning the Grid Area Layout: Index Website */
     .header {
         grid-area: hd;
+        background-color: black;
     }
 
-    .header, .title, .content, .footer {
+    .welcome {
+        grid-area: wel;
+    }
+
+    .title {
+        grid-area: title;
+        background: #fafafa;
+    }
+
+    .content {
+        grid-area: content;
+        background: #fafafa;
+    }
+
+    .footer {
+        grid-area: ft;
+        background-color: rgb(197, 194, 194);
+    }
+
+    .header, .welcome, .title, .content, .footer {
         display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: 100%;
-        grid-template-areas: "centre";
+        grid-template-columns: 80%;
         justify-content: center;
+        align-content: center;
+    }
+
+    .centre {
+        display: grid;
+        justify-content: center;
+        align-content: center;
     }
 
     #content {
@@ -64,9 +65,6 @@
         grid-template-areas: 
         "blog sd"
         "blog links";
-    }
-    .title {
-        grid-area: title;
     }
 
     .blog {
@@ -81,24 +79,76 @@
         grid-area: links;
     }
 
-    .footer {
-        grid-area: ft;
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
+    .langbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .langbar a {
+        padding: 1.5px;
+    }
+
+    /* Styling the links */
+    a:link {
+    text-decoration: none;
+    color: #f1ffff;
+    }
+    
+    a:visited {
+        text-decoration: none;
+        color: #f1ffff;
+    }
+
+    a:hover {
+        color: #8c8c8c;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    /* Removing default Margin and Padding*/
+    h1, h2, h3, p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* Using a Grid Display to determine the Layout of the Header/Footer Navigation Bar */
     #header, #footer {
         display: grid;
         grid-template-columns: 50% 25% 12.5% 12.5%;
         grid-template-rows: 100%;
         grid-template-areas: 
         "logo nav lang face";
-        align-items: center;
+        display: grid;
     }
 
-    .logo {
+    /* Assigning the Grid Area Layout: Header Nav Bar */
+    .logo .copy {
         grid-area: logo;
+        border: 1px solid;
     }
 
-    #navtop {
+    .face {
+        grid-area: face;
+    }
+
+    .navbar {
         grid-area: nav;
     }
 
@@ -106,7 +156,16 @@
         grid-area: lang;
     }
 
-    .face {
-        grid-area: face;
+    .navbar, .langbar {
+        text-align: center;
     }
+
+    #welcome {
+        height: 300px;
+        background: url("moi.jpg");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
 }

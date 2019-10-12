@@ -1,44 +1,36 @@
 @media (max-width: 900px) {
 
-    /* General Layout of index-*.html for Small Devices*/
     .large-container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 140px 180px 180px 40px;
+        grid-template-rows: 200px 80px 600px 140px 40px;
         grid-template-areas: 
         "hd"
-        "wel"
-        "blog"
-        "pf"
+        "title"
+        "content"
         "ft";
         justify-content: center;
         align-content: center;
     }
 
-    /* Boxes for visual aid in determining the UI*/
     /*.box {
         border: 2px solid;
         border-color: yellowgreen;
+        background: lightgrey;
     }*/
 
-    /* Assigning the Grid Area Layout: Index Website */
+    /* Assigning the Grid Area Layout: Blog Website */
     .header {
         grid-area: hd;
         background-color: black;
     }
 
-    .welcome {
-        grid-area: wel;
+    .title {
+        grid-area: title;
     }
 
-    .blog {
-        grid-area: blog;
-        background: #fafafa;
-    }
-
-    .portfolio {
-        grid-area: pf;
-        background: #fafafa;
+    .content {
+        grid-area: content;
     }
 
     .footer {
@@ -46,7 +38,7 @@
         background-color: rgb(197, 194, 194);
     }
 
-    .header, .welcome, .blog, .portfolio, .footer, #welcome-face {
+    .header, .title, .content, .footer {
         display: grid;
         grid-template-columns: 100%;
         justify-content: center;
@@ -54,7 +46,7 @@
     }
 
     .centre {
-        display: grid;
+        grid-area: centre;
         justify-content: center;
         align-content: center;
     }
@@ -84,7 +76,12 @@
         padding: 0px;
     }
 
-    /* Using a Grid Display to determine the Layout of the Header Navigation Bar. Applying Ghost Grid Areas (xx) to evenly distribute content horizontally */
+    /* Removing default Margin and Padding*/
+    h1, h2, h3, p {
+        margin: 0px;
+        padding: 0px;
+    }
+
     #header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -122,32 +119,9 @@
         text-align: right;
     }
 
-    /* Using Grid Display to justify and align the content within their respective Div Containers, thus centering their content horizontally and vertically respectively*/
-    .blog, .portfolio {
+    .blog {
         display: grid;
         justify-content: center;
-        align-content: center;
-    }
-
-    /* Creating the Welcome Card (Hidden card) */
-    #welcome-card {
-        width: 300px;
-        height: 120px;
-        display: grid;
-        display: block;
-        border-radius: 2.5%;
-    }
-    
-    /* Creating the Cards used to advertise the Blog and Project Posts */
-    .card {
-        width: 300px;
-        height: 160px;
-        display: grid;
-        display: inline-block;
-        border: 1px solid;
-        border-color: red;
-        border-radius: 2.5%;
-        background: grey;
     }
 
     /* Hidding the Footer Nav Bar for Small Displays */

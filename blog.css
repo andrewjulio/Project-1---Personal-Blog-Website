@@ -3,27 +3,68 @@
     .large-container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 240px 80px 600px 140px 60px;
+        grid-template-rows: 200px 0px 80px 600px 40px;
         grid-template-areas: 
         "hd"
+        "wel"
         "title"
-        "blog"
-        "sd"
+        "content"
         "ft";
+        justify-content: center;
+        align-content: center;
     }
 
-    .box {
+    /* Boxes for visual aid in determining the UI*/
+    /*.box {
         border: 2px solid;
         border-color: yellowgreen;
-        background: lightgrey;
-    }
+    }*/
 
+    /* Assigning the Grid Area Layout: Index Website */
     .header {
         grid-area: hd;
+        background-color: black;
+    }
+
+    .welcome {
+        grid-area: wel;
     }
 
     .title {
         grid-area: title;
+        background: #fafafa;
+    }
+
+    .content {
+        grid-area: content;
+        background: #fafafa;
+    }
+
+    .footer {
+        grid-area: ft;
+        background-color: rgb(197, 194, 194);
+    }
+
+    .header, .welcome, .title, .content, .footer {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .centre {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "blog blog"
+        "sd links";
     }
 
     .blog {
@@ -32,27 +73,21 @@
 
     .sidebar {
         grid-area: sd;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
 
-    .footer {
-        grid-area: ft;
+    .links {
+        grid-area: links;
     }
 
-    .centre {
-        grid-area: centre;
-    }
-
+    /* Styling the links */
     a:link {
         text-decoration: none;
-        color: #85c7c7;
+        color: #f1ffff;
     }
     
     a:visited {
         text-decoration: none;
-        color: #85c7c7;
+        color: #f1ffff;
     }
 
     a:hover {
@@ -63,12 +98,13 @@
         text-decoration: none;
     }
 
-    ul {
-        list-style: none;
+    /* Removing default Margin and Padding*/
+    h1, h2, h3, p {
         margin: 0px;
         padding: 0px;
     }
 
+    /* Using a Grid Display to determine the Layout of the Header Navigation Bar. Applying Ghost Grid Areas (xx) to evenly distribute content horizontally */
     #header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -80,10 +116,10 @@
         "xx fc lb";
     }
 
+    /* Assigning the Grid Area Layout: Header Nav Bar */
     .logo {
         grid-area: logo;
-        margin: 0px;
-        padding: 0px;
+        text-align: right;
     }
 
     .face {
@@ -94,7 +130,7 @@
         background-repeat: no-repeat;
     }
 
-    .nav {
+    .navbar {
         grid-area: nav;
     }
 
@@ -102,7 +138,7 @@
         grid-area: lb;
     }
 
-    .nav, .langbar {
+    .navbar, .langbar {
         text-align: right;
     }
 
@@ -111,6 +147,7 @@
         justify-content: center;
     }
 
+    /* Hidding the Footer Nav Bar for Small Displays */
     #nav-bottom{
         display: none;
     }

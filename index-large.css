@@ -31,24 +31,6 @@
         grid-area: wel;
     }
 
-    /* Creating the Welcome Card (Hidden card) */
-    #welcome-card {
-        width: 600px;
-        display: grid;
-        display: block;
-        border: 1px solid;
-        border-color: red;
-        border-radius: 2.5%;
-    }
-
-    #welcome {
-        height: 300px;
-        background: url("moi.jpg");
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
-    }
-
     .blog {
         grid-area: blog;
         background: #fafafa;
@@ -159,6 +141,24 @@
         align-content: center;
     }
 
+    /* Creating the Welcome Card (Hidden card) */
+    #welcome-card {
+        width: 600px;
+        display: grid;
+        display: block;
+        border: 1px solid;
+        border-color: red;
+        border-radius: 2.5%;
+    }
+
+    #welcome {
+        height: 300px;
+        background: url("moi.jpg");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    
     /* Creating the Cards used to advertise the Blog and Project Posts */
     .card {
         width: 300px;
