@@ -15,10 +15,10 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    /*.box {
-        border: 2px solid;
+    .box {
+        border: 1px solid;
         border-color: yellowgreen;
-    }*/
+    }
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {

@@ -1,7 +1,7 @@
 @media (min-width: 1401px) {
 
     /* General Layout of index-*.html for Large Devices*/
-    .large-container {
+    .container {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 50px 300px 80px 900px 50px;
@@ -16,10 +16,9 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    /*.box {
-        border: 2px solid;
-        border-color: yellowgreen;
-    }*/
+    .box {
+        border: 1px solid yellowgreen;
+    }
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -67,7 +66,7 @@
         background-color: rgb(197, 194, 194);
     }
 
-    .header, .welcome, .title, .content, .footer, #welcome-face {
+    .header, .welcome, .title, .content, .footer {
         display: grid;
         grid-template-columns: 80%;
         justify-content: center;

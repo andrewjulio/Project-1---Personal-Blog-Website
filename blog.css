@@ -1,5 +1,6 @@
 @media (max-width: 900px) {
 
+    /* General Layout of blog-*.html for Large Devices*/
     .large-container {
         display: grid;
         grid-template-columns: 100%;
@@ -15,10 +16,10 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    /*.box {
-        border: 2px solid;
+    .box {
+        border: 1px solid;
         border-color: yellowgreen;
-    }*/
+    }
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {

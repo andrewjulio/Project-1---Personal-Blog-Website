@@ -1,25 +1,24 @@
 @media (max-width: 900px) {
 
     /* General Layout of index-*.html for Small Devices*/
-    .large-container {
+    .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 140px 180px 180px 40px;
+        grid-template-rows: 240px 140px 40px 400px 40px;
         grid-template-areas: 
         "hd"
         "wel"
-        "blog"
-        "pf"
+        "title"
+        "content"
         "ft";
         justify-content: center;
         align-content: center;
     }
 
     /* Boxes for visual aid in determining the UI*/
-    /*.box {
-        border: 2px solid;
-        border-color: yellowgreen;
-    }*/
+    .box {
+        border: 1px solid yellowgreen;
+    }
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -29,15 +28,16 @@
 
     .welcome {
         grid-area: wel;
-    }
-
-    .blog {
-        grid-area: blog;
         background: #fafafa;
     }
 
-    .portfolio {
-        grid-area: pf;
+    .title {
+        grid-area: title;
+        background: #e9e9e9;
+    }
+
+    .content {
+        grid-area: content;
         background: #fafafa;
     }
 
@@ -46,7 +46,7 @@
         background-color: rgb(197, 194, 194);
     }
 
-    .header, .welcome, .blog, .portfolio, .footer, #welcome-face {
+    .header, .welcome, .title, .content, .footer {
         display: grid;
         grid-template-columns: 100%;
         justify-content: center;
@@ -57,6 +57,27 @@
         display: grid;
         justify-content: center;
         align-content: center;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "blog"
+        "portfolio";
+    }
+
+    .blog {
+        grid-area: blog;
+        height: 180px;
+        background: #e9e9e9;
+    }
+
+    .portfolio {
+        grid-area: portfolio;
+        background: #e9e9e9;
+        height: 180px;
     }
 
     /* Styling the links */

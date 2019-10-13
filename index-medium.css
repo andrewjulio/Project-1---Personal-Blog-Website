@@ -1,25 +1,24 @@
 @media (min-width: 901px) and (max-width: 1400px) {
 
-    /* General Layout of index-*.html for Large Devices*/
-    .large-container {
+    /* General Layout of index-*.html for Medium Devices*/
+    .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50px repeat(3, 300px) 50px;
+        grid-template-rows: 50px 300px 80px 900px 50px;
         grid-template-areas: 
         "hd"
         "wel"
-        "blog"
-        "pf"
+        "title"
+        "content"
         "ft";
         justify-content: center;
         align-content: center;
     }
 
     /* Boxes for visual aid in determining the UI*/
-    /*.box {
-        border: 2px solid;
-        border-color: yellowgreen;
-    }*/
+    .box {
+        border: 1px solid yellowgreen;
+    }
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -29,32 +28,37 @@
 
     .welcome {
         grid-area: wel;
+        background: #fafafa;
     }
 
-    /* Creating the Welcome Card (Hidden card) */
-    #welcome-card {
-        width: 300px;
+    .title {
+        grid-area: title;
+        background: #e9e9e9;
+    }
+
+    .content {
+        background: #fafafa;
+    }
+
+    #content {
         display: grid;
-        display: block;
-        border: 1px solid;
-        border-color: red;
-        border-radius: 2.5%;
-    }
-
-    #welcome {
-        height: 300px;
-        background: url("moi.jpg");
-        background-size: contain;
-        background-position: right;
-        background-repeat: no-repeat;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "blog"
+        "pf";
+        background: #e9e9e9;
+        height: 860px;
     }
 
     .blog {
         grid-area: blog;
+        background: #e9e9e9;
     }
 
     .portfolio {
         grid-area: pf;
+        background: #e9e9e9;
     }
 
     .footer {
@@ -62,7 +66,7 @@
         background-color: rgb(197, 194, 194);
     }
 
-    .header, .welcome, .blog, .portfolio, .footer, #welcome-face {
+    .header, .welcome, .title, .content, .footer {
         display: grid;
         grid-template-columns: 80%;
         justify-content: center;
@@ -105,7 +109,7 @@
     }
 
     a:hover {
-        color: #8c8c8c;
+        color: #9999ff;
     }
 
     a:active {
@@ -124,13 +128,14 @@
         grid-template-columns: 50% 25% 12.5% 12.5%;
         grid-template-rows: 100%;
         grid-template-areas: 
-        "logo nav lang face";
+        "logo nav face lang";
         display: grid;
     }
 
     /* Assigning the Grid Area Layout: Header Nav Bar */
     .logo .copy {
         grid-area: logo;
+        border: 1px solid;
     }
 
     .face {
@@ -156,6 +161,21 @@
         align-content: center;
     }
 
+    /* Creating the Welcome Card (Hidden card) */
+    #welcome-card {
+        width: 300px;
+        display: grid;
+        display: block;
+    }
+
+    #welcome {
+        height: 300px;
+        background: url("moi-fafafa.jpg");
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    
     /* Creating the Cards used to advertise the Blog and Project Posts */
     .card {
         width: 300px;
