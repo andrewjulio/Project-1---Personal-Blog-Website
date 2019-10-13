@@ -41,7 +41,6 @@
     .content {
         grid-area: content;
         background: #fafafa;
-        font-size: 0.7em;
     }
 
     #content {
@@ -140,7 +139,7 @@
         font-family: Iceland;
         font-size: 2.5em;
     }
-    
+
     .face {
         grid-area: fc;
         background-image: url("moi-black.jpg");
@@ -163,13 +162,28 @@
 
     /* Creating the Welcome Card (Hidden card) */
     #welcome-card {
-        width: 300px;
+        width: 200px;
         height: 120px;
         display: grid;
         display: block;
         border-radius: 2.5%;
+        text-align: center;
+        background: radial-gradient(#c8bdd1, #fafafa, #fafafa);
     }
-    
+
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 21px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    button:hover {
+        background-color: rgb(60, 143, 62);
+    }
+
     /* Creating the Cards used to advertise the Blog and Project Posts */
     .card {
         width: 200px;
