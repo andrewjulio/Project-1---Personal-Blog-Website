@@ -30,17 +30,17 @@
 
     .welcome {
         grid-area: wel;
-        background-image: linear-gradient(to right, #c8bdd1, #fafafa, #fafafa, #fafafa, #fafafa,#fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #c8bdd1);
+        background-image: #fafafa;
     }
 
     .title {
         grid-area: title;
         background:  #e9e9e9;
-        background-image: linear-gradient(to right, #c8bdd1, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #c8bdd1);
+        background-image: linear-gradient(to right, white, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, white);
     }
 
     .content {
-        background-image: linear-gradient(to right, #c8bdd1, #fafafa, #fafafa, #fafafa, #fafafa,#fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #fafafa, #c8bdd1);
+        background-image: #fafafa;
     }
 
     #content {
@@ -50,7 +50,7 @@
         grid-template-areas: 
         "blog"
         "pf";
-        background: #e9e9e9;
+        background: rgb(233,233,233, 0.7);
         height: 580px;
         border-radius: 8%;
     }
@@ -126,7 +126,7 @@
     }
 
     /* Removing default Margin and Padding*/
-    h1, h2, h3, p {
+    h1, h2, h3, h4, p {
         margin: 0px;
         padding: 0px;
     }
@@ -145,6 +145,10 @@
     .logo .copy {
         grid-area: logo;
         border: 1px solid;
+    }
+
+    .copy {
+        font-size: 1.5em;
     }
 
     .logo {
@@ -183,7 +187,7 @@
         border-radius: 2.5%;
         text-align: center;
         font-size: 1.5em;
-        background: radial-gradient(#c8bdd1, #fafafa, #fafafa);
+        background: radial-gradient(#c8bdd1, #e9e2ee, #fafafa, #fafafa, white, white, white);
     }
 
     #welcome {
@@ -212,12 +216,12 @@
         width: 200px;
         height: 200px;
         display: grid;
-        border: 1px solid;
-        border-color: red;
+        border: 1px solid #ddd;
         border-radius: 2.5%;
-        background: grey;
+        background: rgb(197, 194, 194, 0.3);
         justify-items: center;
         align-items: center;
+        font-size: 0.7em;
     }
 
     img {
