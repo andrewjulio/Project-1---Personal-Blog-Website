@@ -13,6 +13,8 @@
         "ft";
         justify-content: center;
         align-content: center;
+        font-family: Poppins;
+        font-size: 0.7em
     }
 
     /* Boxes for visual aid in determining the UI*/
@@ -23,17 +25,18 @@
     /* Assigning the Grid Area Layout: Index Website */
     .header {
         grid-area: hd;
-        background-color: black;
+        background:  black;
     }
 
     .welcome {
         grid-area: wel;
-        background: #fafafa;
+        background:  #fafafa;
+
     }
 
     .title {
         grid-area: title;
-        background: #e9e9e9;
+        background:  #e9e9e9;
     }
 
     .content {
@@ -49,16 +52,15 @@
         "pf";
         background: #e9e9e9;
         height: 880px;
+        border-radius: 8%;
     }
 
     .blog {
         grid-area: blog;
-        background: #e9e9e9;
     }
 
     .portfolio {
         grid-area: pf;
-        background: #e9e9e9;
     }
 
     .blog, .portfolio {
@@ -145,6 +147,11 @@
         border: 1px solid;
     }
 
+    .logo {
+        font-family: Iceland;
+        font-size: 2.5em;
+    }
+
     .face {
         grid-area: face;
     }
@@ -192,8 +199,14 @@
         border-color: red;
         border-radius: 2.5%;
         background: grey;
-        justify-content: center;
-        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 250px;
     }
 
 }

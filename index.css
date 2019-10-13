@@ -13,6 +13,8 @@
         "ft";
         justify-content: center;
         align-content: center;
+        font-family: Poppins;
+        font-size: 0.7em
     }
 
     /* Boxes for visual aid in determining the UI*/
@@ -39,6 +41,38 @@
     .content {
         grid-area: content;
         background: #fafafa;
+        font-size: 0.7em;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "blog"
+        "portfolio";
+        height: 1380px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .blog {
+        grid-area: blog;
+        background: #e9e9e9;
+        height: 675px;
+    }
+
+    .portfolio {
+        grid-area: portfolio;
+        background: #e9e9e9;
+        height: 675px;
+    }
+
+    .blog, .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .footer {
@@ -57,34 +91,6 @@
         display: grid;
         justify-content: center;
         align-content: center;
-    }
-
-    #content {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas: 
-        "blog"
-        "portfolio";
-    }
-
-    .blog {
-        grid-area: blog;
-        height: 680px;
-        background: #e9e9e9;
-    }
-
-    .portfolio {
-        grid-area: portfolio;
-        background: #e9e9e9;
-        height: 680px;
-    }
-
-    .blog, .portfolio {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
     }
 
     /* Styling the links */
@@ -130,6 +136,11 @@
         text-align: right;
     }
 
+    .logo {
+        font-family: Iceland;
+        font-size: 2.5em;
+    }
+    
     .face {
         grid-area: fc;
         background-image: url("moi-black.jpg");
@@ -168,13 +179,19 @@
         border-color: red;
         border-radius: 2.5%;
         background: grey;
-        justify-content: center;
-        align-content: center;
+        justify-items: center;
+        align-items: center;
     }
 
     /* Hidding the Footer Nav Bar for Small Displays */
     #nav-bottom{
         display: none;
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 150px;
     }
 
 }
