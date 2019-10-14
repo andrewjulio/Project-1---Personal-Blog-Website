@@ -18,9 +18,9 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    .box {
+    /*.box {
         border: 1px solid yellowgreen;
-    }
+    }*/
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -35,8 +35,8 @@
 
     .title {
         grid-area: title;
-        background:  #e9e9e9;
-        background-image: linear-gradient(to right, white, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, white);
+        background: linear-gradient(to right, white, white, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, white, white);
+        border-radius: 100% 100% 0 0;
     }
 
     .content {
@@ -46,17 +46,38 @@
     #content {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 10% 40% 10% 40%;
         grid-template-areas: 
+        "blog-hd"
         "blog"
+        "pf-hd"
         "pf";
         background: rgb(233,233,233, 0.7);
         height: 880px;
         border-radius: 8%;
     }
 
+    .blog-heading {
+        grid-area: blog-hd;
+    }
+
     .blog {
         grid-area: blog;
+    }
+
+    .portfolio-heading {
+        grid-area: pf-hd;
+    }
+
+    .blog-heading, .portfolio-heading {
+        display: grid;
+        height: 120px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .blog-heading p, .portfolio-heading p {
+        font-size: 1.2em;
     }
 
     .portfolio {
@@ -118,7 +139,7 @@
     }
 
     a:hover {
-        color: #9999ff;
+        color: rgb(167, 223, 168);
     }
 
     a:active {
@@ -194,10 +215,14 @@
 
     #welcome {
         height: 300px;
-        background: url("moi-fafafa.jpg");
+        background: url("moi.jpg");
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
+    }
+
+    #welcome-card:hover {
+        background: radial-gradient(#c8bdd1, rgb(185, 231, 187), #fafafa, white, white, white);
     }
     
     button {
@@ -210,7 +235,7 @@
     }
 
     button:hover {
-        background-color: rgb(60, 143, 62);
+        background-color: rgb(78, 168, 81);
     }
     
     /* Creating the Cards used to advertise the Blog and Project Posts */
@@ -218,12 +243,15 @@
         width: 300px;
         height: 300px;
         display: grid;
-        border: 1px solid #ddd;
         border-radius: 2.5%;
         background: rgb(197, 194, 194, 0.3);
         justify-items: center;
         align-items: center;
         font-size: 0.7em;
+    }
+
+    .card:hover {
+        background: rgb(167, 223, 168);
     }
 
     img {
