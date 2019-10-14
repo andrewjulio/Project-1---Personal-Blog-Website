@@ -18,10 +18,10 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    /*.box {
+    .box {
         border: 1px solid;
         border-color: yellowgreen;
-    }*/
+    }
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -68,6 +68,44 @@
     .post{
         height: 880px;
         background: white;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 800px;
+        grid-template-areas: 
+        "blogtitle"
+        "text";
+        justify-content: center;
+        align-content: center;
+    }
+
+    .blogtitle {
+        grid-area: blogtitle;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .text {
+        grid-area: text;
+    }
+
+    .avatar {
+        width: 80px;
+    }
+
+    .avatar img{
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid rgb(167, 223, 168);
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    .blog-title {
+        justify-items: space-evenly;
+        align-content: center;
     }
 
     .footer {
