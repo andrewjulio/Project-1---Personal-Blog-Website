@@ -40,6 +40,10 @@
         border-radius: 100% 100% 0 0;
     }
 
+    .title-navbar {
+        display: none;
+    }
+
     .content {
         grid-area: content;
         background: white;
