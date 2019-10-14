@@ -192,7 +192,6 @@
         grid-template-rows: 100%;
         grid-template-areas: 
         "logo nav face lang";
-        display: grid;
     }
 
     /* Assigning the Grid Area Layout: Header Nav Bar */

@@ -36,7 +36,9 @@
         display:grid;
         grid-template-columns: 80%;
         justify-content: center;
-        align-content: center;
+        align-content: center;        
+        background: radial-gradient(#c8bdd1, #e9e2ee, #fafafa, #fafafa, white, white, white);
+        text-align: center;
     }
 
     .title {
