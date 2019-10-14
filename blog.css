@@ -68,6 +68,54 @@
     .post{
         height: 860px;
         background: white;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 800px;
+        grid-template-areas: 
+        "blogtitle"
+        "text";
+        justify-content: center;
+        align-content: center;
+    }
+
+    .blogtitle {
+        grid-area: blogtitle;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-top: 10px;
+    }
+
+    .text {
+        grid-area: text;
+    }
+
+    .avatar {
+        width: 50px;
+    }
+
+    .avatar img{
+        width: 40px;
+        border-radius: 50%;
+        border: 2px solid rgb(167, 223, 168);
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    .blog-title {
+        justify-items: space-evenly;
+        align-content: center;
+    }
+
+    .blog-title p {
+        color: rgb(167, 223, 168);
+        font-weight: 700;
+    }
+
+    .text, .blog-title {
+        font-size: 0.7em;
     }
 
     .footer {
@@ -109,17 +157,17 @@
 
     .title-navbar a:link, .title-navbar a:visited {
         text-decoration: none;
-        color: #f1ffff;
-        -webkit-text-stroke-width: 0.1px; 
-        -webkit-text-stroke-color: black;
+        color: rgb(197, 194, 194);
     }
 
+    .logo a:link, .logo a:visited {
+        text-decoration: none;
+        color: rgb(167, 223, 168);
+    }
+    
     .title-navbar a:hover {
         color: rgb(167, 223, 168);
-        -webkit-text-stroke-width: 0.000001px; 
-        -webkit-text-stroke-color: rgb(167, 223, 168);
     }
-
 
     /* Removing default Margin and Padding*/
     h1, h2, h3, h4, p {
@@ -165,8 +213,8 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        -webkit-text-stroke-width: 1px; 
-        -webkit-text-stroke-color: black;
+        font-size: 1.2em;
+        font-weight: 700;
     }
 
     .navbar {

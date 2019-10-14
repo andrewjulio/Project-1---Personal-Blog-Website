@@ -122,6 +122,11 @@
         color: rgb(197, 194, 194);
     }
 
+    .logo a:link, .logo a:visited {
+        text-decoration: none;
+        color: rgb(167, 223, 168);
+    }
+
     .title-navbar a:hover {
         color: rgb(167, 223, 168);
     }
@@ -172,6 +177,7 @@
         font-size: 1.2em;
         font-weight: 700;
     }
+
     .navbar {
         display: none;
     }
