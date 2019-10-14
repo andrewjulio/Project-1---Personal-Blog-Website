@@ -4,7 +4,7 @@
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 240px 140px 40px 1400px 40px;
+        grid-template-rows: 60px 140px 40px 1400px 40px;
         grid-template-areas: 
         "hd"
         "wel"
@@ -89,6 +89,25 @@
         align-content: center;
     }
 
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .langbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+    }
+
+    .langbar a {
+        padding: 1.5px;
+    }
+
     /* Styling the links */
     a:link {
         text-decoration: none;
@@ -117,44 +136,26 @@
     /* Using a Grid Display to determine the Layout of the Header Navigation Bar. Applying Ghost Grid Areas (xx) to evenly distribute content horizontally */
     #header {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 25%);
+        grid-template-columns: 50% 50%;
         grid-template-areas: 
-        "logo logo logo"
-        "xx fc nav"
-        "xx fc nav"    
-        "xx fc lb";
+        "logo lang";
+        display: grid;
     }
 
     /* Assigning the Grid Area Layout: Header Nav Bar */
     .logo {
         grid-area: logo;
-        text-align: right;
-    }
-
-    .logo {
         font-family: Iceland;
         font-size: 2.5em;
-    }
-
-    .face {
-        grid-area: fc;
-        background-image: url("moi-black.jpg");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        text-align: left;
     }
 
     .navbar {
-        grid-area: nav;
+        display: none;
     }
 
     .langbar {
-        grid-area: lb;
-    }
-
-    .navbar, .langbar {
-        text-align: right;
+        grid-area: lang;
     }
 
     /* Creating the Welcome Card (Hidden card) */
