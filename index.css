@@ -18,9 +18,9 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    .box {
+    /*.box {
         border: 1px solid yellowgreen;
-    }
+    }*/
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -166,6 +166,10 @@
         border-radius: 2.5%;
         text-align: center;
         background: radial-gradient(#c8bdd1, #e9e2ee, #fafafa, #fafafa, white, white, white);
+    }
+
+    #welcome-card:hover {
+        background: radial-gradient(#c8bdd1, rgb(185, 231, 187), #fafafa, white, white, white);
     }
 
     button {

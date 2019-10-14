@@ -211,6 +211,10 @@
         background: radial-gradient(#c8bdd1, #e9e2ee, #fafafa, #fafafa, white, white, white);
     }
 
+    #welcome-card:hover {
+        background: radial-gradient(#c8bdd1, rgb(185, 231, 187), #fafafa, white, white, white);
+    }
+
     #welcome {
         height: 300px;
         background: url("moi.jpg");
