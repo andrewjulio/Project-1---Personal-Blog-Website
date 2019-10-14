@@ -33,6 +33,13 @@
         background-image: #fafafa;
     }
 
+    #quote-box {
+        display:grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        align-content: center;
+    }
+
     .title {
         grid-area: title;
         background: linear-gradient(to right, white, white, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, white, white);
@@ -270,5 +277,57 @@
         border-radius: 4px;
         width: 250px;
     }
+
+    /*For the Random Quote Generator*/
+      .quote {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.1;
+        position: relative;
+        margin: 0;
+      }
+      
+      .quote:before, .quote:after {
+        font-size: 2rem;
+      }
+      
+      .quote:before {
+        content: "“";
+        top: .25em;
+        left: -.5em;
+      }
+      
+      .quote:after {
+        content: "”";
+        bottom: -.1em;
+        margin-left: .1em;
+        position: absolute;
+      }
+      
+      .source {
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        line-height: 1.1;
+        text-align: right;
+        margin-right: 4em;
+      }
+      
+      .source:before {
+        content: "—";
+      }
+      
+      .citation {
+        font-style: italic;
+      }
+      
+      .citation:before {
+        content: ", ";
+        font-style: normal;
+      }
+      
+      .year:before {
+        content: ", ";
+        font-style: normal;
+      }
 
 }
