@@ -4,7 +4,7 @@
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px 140px 40px 1100px 40px;
+        grid-template-rows: 60px 140px 40px 2450px 40px;
         grid-template-areas: 
         "hd"
         "wel"
@@ -62,20 +62,26 @@
         border-radius: 8%;
         justify-content: center;
         align-content: center;
-        height: 1080px;
+        height: 2430px;
+    }
+
+    .posting-board {
+        background: white;
+        height: 2410px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .post{
-        height: 1060px;
-        background: white;
+        height: 790px;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 80px 1000px;
+        grid-template-rows: 100px 650px;
         grid-template-areas: 
         "blogtitle"
         "text";
-        justify-content: center;
-        align-content: center;
+
     }
 
     .blogtitle {
@@ -83,16 +89,16 @@
         display: flex;
         flex-direction: row;
         justify-content: left;
-        margin-top: 10px;
     }
 
     .text {
         grid-area: text;
         display: grid;
-        grid-template-columns: 95%;
-        justify-content: space-evenly;
+        grid-template-columns: 80%;
+        justify-content: center;
         text-align: justify;
-        font-size: 1.05em;
+        font-size: 1em;
+        height: 480px;
     }
 
     .avatar {
