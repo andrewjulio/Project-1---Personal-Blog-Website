@@ -63,14 +63,15 @@
         border-radius: 8%;
         justify-content: center;
         align-content: center;
+        height: 880px;
     }
 
     .post{
-        height: 880px;
+        height: 860px;
         background: white;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 80px 800px;
+        grid-template-rows: 80px 700px;
         grid-template-areas: 
         "blogtitle"
         "text";
