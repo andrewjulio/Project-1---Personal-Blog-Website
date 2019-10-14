@@ -196,7 +196,7 @@
         justify-content: center;
     }
 
-    .copy {
+    .copy, .langbar p {
         font-size: 1.5em;
     }
 
