@@ -60,20 +60,25 @@
         border-radius: 8%;
     }
 
-    .portfolio-heading {
+    .blog-heading, .portfolio-heading {
         height: 55px;
         display: grid;
         grid-template-columns: 100%;
         justify-content: center;
         align-content: center;
+        text-align: center;
     }
 
-    .portfolio {
+    .blog, .portfolio {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 1320px;
+        height: 620px;
+    }
+
+    .blog p {
+        font-size: 1.1em;
     }
 
     .footer {
