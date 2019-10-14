@@ -4,7 +4,7 @@
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px 140px 40px 900px 40px;
+        grid-template-rows: 60px 140px 40px 1100px 40px;
         grid-template-areas: 
         "hd"
         "wel"
@@ -62,15 +62,15 @@
         border-radius: 8%;
         justify-content: center;
         align-content: center;
-        height: 880px;
+        height: 1080px;
     }
 
     .post{
-        height: 860px;
+        height: 1060px;
         background: white;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 80px 800px;
+        grid-template-rows: 80px 1000px;
         grid-template-areas: 
         "blogtitle"
         "text";
@@ -88,6 +88,11 @@
 
     .text {
         grid-area: text;
+        display: grid;
+        grid-template-columns: 95%;
+        justify-content: space-evenly;
+        text-align: justify;
+        font-size: 1.05em;
     }
 
     .avatar {
@@ -107,15 +112,12 @@
     .blog-title {
         justify-items: space-evenly;
         align-content: center;
+        font-size: 0.7em;
     }
 
     .blog-title p {
         color: rgb(167, 223, 168);
         font-weight: 700;
-    }
-
-    .text, .blog-title {
-        font-size: 0.7em;
     }
 
     .footer {
@@ -164,7 +166,7 @@
         text-decoration: none;
         color: rgb(167, 223, 168);
     }
-    
+
     .title-navbar a:hover {
         color: rgb(167, 223, 168);
     }

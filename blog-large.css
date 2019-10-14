@@ -87,6 +87,11 @@
 
     .text {
         grid-area: text;
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: center;
+        text-align: justify;
+        font-size: 1.3em;
     }
 
     .avatar {
@@ -161,7 +166,7 @@
         text-decoration: none;
         color: rgb(167, 223, 168);
     }
-    
+
     .title-navbar a:hover {
         color: rgb(167, 223, 168);
     }
