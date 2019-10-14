@@ -1,103 +1,245 @@
 @media (max-width: 900px) {
 
-    .large-container {
+    .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 240px 450px 60px;
-        grid-template-areas: 
+        grid-template-rows: 60px 140px 40px 600px 40px;
+        grid-template-areas:
         "hd"
-        "about"
+        "wel"
+        "title"
+        "content"
         "ft";
+        justify-content: center;
+        align-content: center;
+        font-family: Poppins;
+        font-size: 0.7em
     }
 
-    .box {
-        border: 2px solid;
-        border-color: yellowgreen;
-        background: lightgrey;
-    }
+        /* Boxes for visual aid in determining the UI*/
+    /*.box {
+        border: 1px solid yellowgreen;
+    }*/
 
+    /* Assigning the Grid Area Layout: About Website */
     .header {
         grid-area: hd;
+        background:  black;
+    }
+
+    .welcome {
+        grid-area: wel;
+        background-image: #fafafa;
+    }
+
+    .title {
+        grid-area: title;
+        background: linear-gradient(to right, white, white, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, #e9e9e9, white, white);
+        border-radius: 100% 100% 0 0;
+    }
+
+    #title {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-areas: 
+        "nav";
+        justify-content: center;
+        align-content: center;
+    }
+
+    .content {
+        background-image: #fafafa;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 80%;
+        background: rgb(233,233,233, 0.7);
+        height: 560px;
+        border-radius: 8%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .about-card h1, .about-card h3 {
+        color: rgb(117, 187, 118);
+    }
+
+    .about-card h3 {
+        text-align: justify;
     }
 
     .footer {
         grid-area: ft;
+        background-color: rgb(197, 194, 194);
+    }
+
+    .header, .welcome, .title, .content, .footer {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-content: center;
     }
 
     .centre {
-        grid-area: centre;
+        display: grid;
+        justify-content: center;
+        align-content: center;
     }
 
+    /* Styling the links */
     a:link {
         text-decoration: none;
-        color: #85c7c7;
+        color: #f1ffff;
     }
     
     a:visited {
         text-decoration: none;
-        color: #85c7c7;
+        color: #f1ffff;
     }
 
     a:hover {
-        color: #8c8c8c;
+        color: rgb(167, 223, 168);
     }
 
     a:active {
         text-decoration: none;
     }
 
-    ul {
-        list-style: none;
+    .title-navbar a:link, .title-navbar a:visited {
+        text-decoration: none;
+        color: rgb(197, 194, 194);
+    }
+
+    .logo a:link, .logo a:visited {
+        text-decoration: none;
+        color: rgb(167, 223, 168);
+    }
+
+    .title-navbar a:hover {
+        color: rgb(167, 223, 168);
+    }
+
+    /* Removing default Margin and Padding*/
+    h1, h2, h3, h4, p {
         margin: 0px;
         padding: 0px;
     }
 
+    /* Using a Grid Display to determine the Layout of the Header Navigation Bar. Applying Ghost Grid Areas (xx) to evenly distribute content horizontally */
     #header {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 25%);
+        grid-template-columns: 50% 50%;
         grid-template-areas: 
-        "logo logo logo"
-        "xx fc nav"
-        "xx fc nav"    
-        "xx fc lb";
+        "logo lang";
+        display: grid;
+    }
+
+    /* Assigning the Grid Area Layout: Header Nav Bar */
+    .logo .copy {
+        grid-area: logo;
+        border: 1px solid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: 1.5em;
     }
 
     .logo {
-        grid-area: logo;
-        margin: 0px;
-        padding: 0px;
+        font-family: Iceland;
+        font-size: 2.5em;
+        color: rgb(167, 223, 168);
     }
 
     .face {
-        grid-area: fc;
-        background-image: url("moi-black.jpg");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        grid-area: face;
     }
 
-    .nav {
+    .title-navbar {
         grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .navbar {
+        display: none;
     }
 
     .langbar {
-        grid-area: lb;
-    }
-
-    .nav, .langbar {
-        text-align: right;
-    }
-
-    .about {
-        grid-area: about;
+        grid-area: lang;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
     }
 
-    #nav-bottom{
+    .langbar a {
+        padding: 1.5px;
+    }
+
+    .navbar, .langbar {
+        text-align: center;
+    }
+
+    button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 21px;
+        margin: 5px 0 5px 0;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .card button {
+        font-size: 1.2em;
+    }
+
+    button:hover {
+        background-color: rgb(60, 143, 62);
+    }
+
+    /* Creating the Cards used to advertise the Blog and Project Posts */
+    .card {
+        width: 180px;
+        height: 180px;
+        display: grid;
+        border: 1px solid #ddd;
+        border-radius: 2.5%;
+        background: rgb(197, 194, 194, 0.3);
+        justify-items: center;
+        align-items: center;
+        font-size: 0.75em;
+    }
+
+    .card:hover {
+        background: rgb(167, 223, 168);
+    }
+
+    /* Hidding the Footer Nav Bar for Small Displays */
+    #nav-bottom, #social{
         display: none;
+    }
+
+    img {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        width: 150px;
     }
 
 }

@@ -274,7 +274,7 @@
     }
 
     /* Hidding the Footer Nav Bar for Small Displays */
-    #nav-bottom{
+    #nav-bottom, #social{
         display: none;
     }
 
