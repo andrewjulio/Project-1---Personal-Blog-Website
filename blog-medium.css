@@ -40,8 +40,13 @@
         border-radius: 100% 100% 0 0;
     }
 
-    .title-navbar {
-        display: none;
+    #title {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-areas: 
+        "nav";
+        justify-content: center;
+        align-content: center;
     }
 
     .content {
@@ -83,31 +88,8 @@
         align-content: center;
     }
 
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .langbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .langbar a {
-        padding: 1.5px;
-    }
-
      /* Styling the links */
-     a:link {
-        text-decoration: none;
-        color: #f1ffff;
-    }
-    
-    a:visited {
+     a:link, a:visited {
         text-decoration: none;
         color: #f1ffff;
     }
@@ -118,6 +100,15 @@
 
     a:active {
         text-decoration: none;
+    }
+
+    .title-navbar a:link, .title-navbar a:visited {
+        text-decoration: none;
+        color: rgb(197, 194, 194);
+    }
+
+    .title-navbar a:hover {
+        color: rgb(167, 223, 168);
     }
 
     /* Removing default Margin and Padding*/
@@ -157,12 +148,34 @@
         grid-area: face;
     }
 
-    .navbar {
+    .title-navbar {
         grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.4em;
+        font-weight: 700;
     }
 
-    .langbar {
+    .langbar{
         grid-area: lang;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navbar {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .langbar a {
+        padding: 1.5px;
     }
 
     .navbar, .langbar {
@@ -188,7 +201,7 @@
     }
 
     #welcome-card:hover {
-        background: radial-gradient(#c8bdd1, rgb(185, 231, 187), #fafafa, white, white, white);
+        background: radial-gradient(rgb(185, 231, 187), rgb(185, 231, 187), #fafafa, white, white, white);
     }
     
     #welcome {

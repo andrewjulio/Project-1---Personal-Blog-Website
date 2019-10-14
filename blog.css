@@ -18,10 +18,9 @@
     }
 
     /* Boxes for visual aid in determining the UI*/
-    .box {
-        border: 1px solid;
-        border-color: yellowgreen;
-    }
+    /*.box {
+        border: 1px solid yellowgreen;
+    }*/
 
     /* Assigning the Grid Area Layout: Index Website */
     .header {
@@ -129,7 +128,7 @@
     }
 
     /* Using a Grid Display to determine the Layout of the Header/Footer Navigation Bar */
-    #header, #footer {
+    #header {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
